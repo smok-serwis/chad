@@ -1,0 +1,13 @@
+[run]
+branch=1
+source=
+    chad
+    documentation
+
+omit=
+    chad/wsgi.py
+    chad/asgi.py
+
+[report]
+exclude_lines=
+    pragma: no cover

@@ -10,7 +10,9 @@ services:
     ports:
       - "5432:5432"
   run_local:
-    build: .
+    build:
+      context: .
+      target: runtime
     command: ["/usr/local/bin/python", "manage.py", "runserver", "0.0.0.0:8000"]
     environment:
       DEBUG: "1"
@@ -21,5 +23,16 @@ services:
       - postgres
     ports:
       - "8000:8000"
+  unittest:
+    build:
+      context: .
+      target: unittest
+    environment:
+      DEBUG: "1"
+      DB_NAME: "chad"
+      DB_HOST: "postgres"
+      DB_PASSWORD: "postgres"
+    depends_on:
+      - postgres
 volumes:
   postgresql:

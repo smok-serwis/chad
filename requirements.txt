@@ -3,3 +3,5 @@ django-rest-framework
 gunicorn
 drf-spectacular
 psycopg2
+djangorestframework-simplejwt
+satella
