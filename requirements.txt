@@ -1,0 +1,5 @@
+Django
+django-rest-framework
+gunicorn
+drf-spectacular
+psycopg2

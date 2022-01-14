@@ -9,3 +9,5 @@ Talk about self-writing documentation!
 
 This is a project ran internally at SMOK sp. z o. o. investigating whether this is
 a right approach for creating and maintaining documentation.
+
+It consists of two parts - a backend service and a [frontend](frontend).
