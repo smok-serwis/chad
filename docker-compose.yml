@@ -10,6 +10,7 @@ services:
     ports:
       - "5432:5432"
   run_local:
+    build: .
     command: ["/usr/local/bin/python", "manage.py", "runserver", "0.0.0.0:8000"]
     environment:
       DEBUG: "1"
